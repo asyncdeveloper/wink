@@ -1,9 +1,12 @@
 <?php
 
 namespace Wink;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class WinkTag extends AbstractWinkModel
 {
+    use SoftDeletes;
+
     /**
      * The attributes that aren't mass assignable.
      *
