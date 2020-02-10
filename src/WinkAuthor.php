@@ -3,9 +3,13 @@
 namespace Wink;
 
 use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class WinkAuthor extends AbstractWinkModel implements Authenticatable
 {
+
+    use SoftDeletes;
+
     /**
      * The attributes that aren't mass assignable.
      *
